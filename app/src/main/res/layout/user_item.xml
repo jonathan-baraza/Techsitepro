@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/imageProfile"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imageProfile"
+        android:layout_toStartOf="@+id/follow"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="_jonathan_baraza"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fullname"
+            android:textStyle="bold"
+            android:textColor="@color/black2"
+            android:text="Jonathan Baraza"/>
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="follow"
+        android:id="@+id/follow"
+        android:layout_alignParentEnd="true"
+        android:textAllCaps="false"
+        android:theme="@style/Theme.MaterialComponents.DayNight"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

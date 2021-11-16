@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_marginBottom="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/imageProfile"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:text="_jonathan_baraza"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:id="@+id/username"
+            android:layout_toEndOf="@+id/imageProfile"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/more"
+            android:src="@drawable/ic_more"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="1:1"
+            android:layout_marginTop="5dp"
+            android:id="@+id/postImage"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_like"
+            android:layout_centerVertical="true"
+            android:id="@+id/like"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_comment"
+            android:layout_toEndOf="@+id/like"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/comment"/>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3 likes"
+        android:id="@+id/numOfLikes"
+        android:textSize="14sp"
+        android:textColor="@color/primarydarktwo"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Jonathan Baraza"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textStyle="bold"
+        android:id="@+id/fullname"/>
+    <com.hendraanggrian.appcompat.widget.SocialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#code hello there"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:id="@+id/description"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View all 3 comments"
+        android:id="@+id/numOfComments"
+        android:layout_marginTop="7dp"
+        android:textSize="13sp"
+        android:textColor="@color/primarydarktwo"/>
+
+</LinearLayout>
