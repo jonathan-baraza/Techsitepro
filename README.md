@@ -26,6 +26,7 @@
 ![start](home.PNG)
 ![start](profile.PNG)
 ![start](messages.PNG)
+![start](chat.PNG)
 
 ---
 
