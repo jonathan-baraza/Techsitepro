@@ -1,4 +1,4 @@
-# <span style="align-items:center;display:flex;justify-content:center;"><span style="width:120px;height:120px;margin-right:10px;">![Techsite](pics/logo.png)</span> Techsite pro</span></span>
+# <span style="align-items:center;display:flex;justify-content:center;"><span style="width:120px;height:120px;margin-right:10px;">![Techsite](logo.png)</span> Techsite pro</span></span>
 
 ---
 
@@ -20,12 +20,12 @@
 
 ### Screenshots of the app
 
-![start](/pics/start.png)
-![start](/pics/register.png)
-![start](/pics/login.png)
-![start](/pics/home.png)
-![start](/pics/profile.png)
-![start](/pics/messages.png)
+![start](start.png)
+![start](register.png)
+![start](login.png)
+![start](home.png)
+![start](profile.png)
+![start](messages.png)
 
 ---
 
